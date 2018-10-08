@@ -8,9 +8,9 @@
 
 %section#home.overflow-hidden.slider-banner
   .main-slider
-    %ul.slides
+    %ul#slider-image.slides
       %li
-        %img.img-fluid{:alt => "", :src => "http://files.massadesigns.com/images/visitors/header/header02-min.jpg"}
+        %img.img-fluid{:alt => "", :src => "../assets/header02.jpg"}
           .slider-overlay
             .slider-table
               .slider-vm
@@ -19,58 +19,6 @@
                   %p.header-bg Creative all in one Digital Image & Photography Solutions
                   %a.btn.btn-lg.btn-white-border{:href => "#agency"} Learn more
           / slider overlay end
-      %li
-        %img.img-fluid{:alt => "", :src => "http://files.massadesigns.com/images/visitors/header/header10-min.jpg"}
-          .slider-overlay
-            .slider-table
-              .slider-vm
-                .container.text-center
-                  %h1.header-bg State of the Art Technology
-                  %p.header-bg Creativity meets technology in today's digital age
-                  %a.btn.btn-lg.btn-white-border{:href => "#services"} Our Services
-          / slider overlay end
-      %li
-        %img.img-fluid{:alt => "", :src => "http://files.massadesigns.com/images/visitors/header/header04-min.jpg"}
-          .slider-overlay
-            .slider-table
-              .slider-vm
-                .container.text-center
-                  %h1.header-bg High Definition Excellence
-                  %p.header-bg Quality through dedication, attention to detail and strong team work
-                  %a.btn.btn-lg.btn-white-border{:href => "#work"} Portfolio
-              / slider overlay end
-      %li
-        %img.img-fluid{:alt => "", :src => "http://files.massadesigns.com/images/visitors/header/header05-min.jpg"}
-          .slider-overlay
-            .slider-table
-              .slider-vm
-                .container.text-center
-                  %h1.header-bg We are Massa Designs
-                  %p.header-bg Creative all in one Digital Image & Photography Solutions
-                  %a.btn.btn-lg.btn-white-border{:href => "#agency"} Learn more
-          / slider overlay end
-      %li
-        %img.img-fluid{:alt => "", :src => "http://files.massadesigns.com/images/visitors/header/header06-min.jpg"}
-          .slider-overlay
-            .slider-table
-              .slider-vm
-                .container.text-center
-                  %h1.header-bg State of the Art Technology
-                  %p.header-bg Creativity meets technology in today's digital age
-                  %a.btn.btn-lg.btn-white-border{:href => "#services"} Our Services
-          / slider overlay end
-      %li
-        %img.img-fluid{:alt => "", :src => "http://files.massadesigns.com/images/visitors/header/header01-min.jpg"}
-          .slider-overlay
-            .slider-table
-              .slider-vm
-                .container.text-center
-                  %h1.header-bg High Definition Excellence
-                  %p.header-bg Quality through dedication, attention to detail and strong team work
-                  %a.btn.btn-lg.btn-white-border{:href => "#work"} Portfolio
-              / slider overlay end
-          / slides end
-        / slider end
 
 
 %section#agency
@@ -104,39 +52,6 @@
                 %a.text-color{"data-scroll" => "data-scroll", :href => "#contact"} Contact us
                 today for more information about how our design services will improve your business today!
 
-        -##skills.tab-pane{:role => "tabpanel"}
-        -#  .col-md-8.offset-md-2.text-center
-        -#    .progress.clearfix
-        -#      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
-        -#        %span.skill-name Complete Staging and Photography Equipment
-        -#        %span.float-right.value 100%
-        -#    / progress bar
-        -#    .progress.clearfix
-        -#      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
-        -#        %span.skill-name Downloadable Print Quality Visuals
-        -#        %span.float-right.value 100%
-        -#    / progress bar
-        -#    .progress.clearfix
-        -#      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
-        -#        %span.skill-name Adobe Photoshop
-        -#        %span.float-right.value 100%
-        -#    / progress bar
-        -#    .progress.clearfix
-        -#      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
-        -#        %span.skill-name Adobe Lightroom
-        -#        %span.float-right.value 100%
-        -#    / progress bar
-        -#    .progress.clearfix
-        -#      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
-        -#        %span.skill-name Adobe Premier Pro
-        -#        %span.float-right.value 100%
-        -#    / progress bar
-        -#    .progress.clearfix
-        -#      .progress-bar{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "100", :role => "progressbar", :style => "width:100%"}
-        -#        %span.skill-name Hosted Virtual Tours
-        -#        %span.float-right.value 100%
-        -#    / progress bar
-        -#/ tab panel end
         #process.tab-pane{:role => "tabpanel"}
           .row
             .col-md-3.col-sm-6.margin-b-30
@@ -173,24 +88,12 @@
   .space-40
 / end about section
 
-/ Parallax
--#.dzsparallaxer.auto-init{"data-options" => "{   direction: \"reverse\"}", :style => "height: 350px;"}
--#  .divimage.dzsparallaxer--target{:style => "width: 101%; height: 600px; background-image: url('images/1575628.jpg')"}
--#  .parallax-text.text-center.center-it
--#    %h2 " A high quality photo will capture the eye of any potential buyer. I use Massa Designs services for this exact reason. "
-
-
-
 .dzsparallaxer.auto-init.dzsprx-readyall{"data-options" => "{   direction: \"reverse\"}", :style => "height: 350px;"}
-  .divimage.dzsparallaxer--target{:style => "width: 101%; height: 600px; background-image: url(http://files.massadesigns.com/images/visitors/thumbnails/video_thumbnail-min.png); transform: translate3d(0px, -148.236px, 0px);"}
+  .divimage.dzsparallaxer--target{:style => "width: 101%; height: 600px; background-image: url(/assets/video_thumbnail-min.png); transform: translate3d(0px, -148.236px, 0px);"}
   .parallax-text.text-center.center-it
     %h2 Watch Aerial 4K Video Tour
     %a.video-link{"data-target" => "#video-popup", "data-toggle" => "modal", :href => "#"}
       %i.ion-ios-play-outline
-
-
-
-
 
 %section#work
   .space-50
@@ -207,119 +110,21 @@
   .container{:style => 'text-align:center;width:100% !important;'}
     .row
       .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-5.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-5.jpg'}
+        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => '/assets/portfolio/x-large/massa-designs-portfolio-5.jpg'}
+          %img.img-fluid{:src => '/assets/portfolio/small/massa-designs-portfolio-5.jpg'}
       .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-6.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-6.jpg'}
+        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => '/assets/portfolio/x-large/massa-designs-portfolio-6.jpg'}
+          %img.img-fluid{:src => '/assets/portfolio/small/massa-designs-portfolio-6.jpg'}
       .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-7.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-7.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-8.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-8.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-9.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-9.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-10.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-10.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-11.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-11.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-12.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-12.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-13.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-13.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-35.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-35.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-36.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-36.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-37.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-37.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-14.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-14.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-15.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-15.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-16.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-16.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-17.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-17.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-18.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-18.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-19.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-19.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-20.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-20.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-21.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-21.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-22.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-22.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-29.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-29.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-30.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-30.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-31.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-31.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-23.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-23.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-24.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-24.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-25.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-25.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-32.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-32.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-33.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-33.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-34.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-34.jpg'}
-    .row
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-38.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-38.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-39.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-39.jpg'}
-      .col-4.col-md-4
-        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Aerial Photography', :href => 'images/portfolio/x-large/massa-designs-portfolio-40.jpg'}
-          %img.img-fluid{:src => 'images/portfolio/small/massa-designs-portfolio-40.jpg'}
+        %a.mb-4{'data-fancybox' => 'images', 'data-caption' => 'Architectural Photography', :href => '/assets/portfolio/x-large/massa-designs-portfolio-7.jpg'}
+          %img.img-fluid{:src => '/assets/portfolio/small/massa-designs-portfolio-7.jpg'}
+    #loading-portfolio Still Loading
+  #more-data-portfolio
 
 .space-40
 
 .dzsparallaxer.auto-init{"data-options" => "{   direction: \"reverse\"}", :style => "height: 350px;"}
-  .divimage.dzsparallaxer--target{:style => "width: 101%; height: 600px; background-image: url('images/1575628.jpg')"}
+  .divimage.dzsparallaxer--target{:style => "width: 101%; height: 600px; background-image: url('/assets/1575628.jpg')"}
   .parallax-text.text-center.center-it
     .testi-slider
       %ul.slides
@@ -329,131 +134,6 @@
           %p
             " Great photos produced, I was able to really bring out the best aspects of my listing with Massa Designs. "
           %h5
-        / li
-        -#%li
-        -#  %h1{:style => "color:#fff;    text-transform: uppercase;     letter-spacing: 7px;     text-align: center;     font-weight: 400;     font-size: 1.8rem;     margin-bottom: 25px;"} REVIEWS
-        -#  %i.ion-quote
-        -#  %p
-        -#    " A super clean print quality depiction of my property listing, will use again! "
-        -#  %h5
-        -#/ li
-        -#%li
-        -#  %h1{:style => "color:#fff;    text-transform: uppercase;     letter-spacing: 7px;     text-align: center;     font-weight: 400;     font-size: 1.8rem;     margin-bottom: 25px;"} REVIEWS
-        -#  %i.ion-quote
-        -#  %p
-        -#    " It is amazing how well the enhanced photos have helped brighten every room of the house! "
-        -#  %h5
-
-
-
-/ pricing start
--#%section.pricing-wrapper
--#  .container
--#    .row.flex-box
--#      .col-md-4.d-flex.align-middle.margin-b-30
--#        .price-box.scrollReveal.sr-scaleDown.sr-ease-in-out-back
--#          %h3 Silver
--#          %h1
--#            -#%sup
--#            16 Photos
--#          %ul.list-unstyled
--#            %li All Images Enhanced Quality
--#            %li Amenity shots if available
--#          .price-footer
--#            %a.btn.btn-lg.btn-dark-border{:href => "#"} Schedule Today!
--#        / price box
--#      / price col
--#      .col-md-4.d-flex.align-middle.margin-b-30
--#        .price-box.scrollReveal.sr-scaleDown.sr-ease-in-out-back.sr-delay-1
--#          %h3 Gold
--#          %h1
--#            -#%sup $
--#            20 Photos
--#          %ul.list-unstyled
--#            %li All Views HD Magazine Quality
--#            %li Amenity shots if available
--#            %li 1-2 Aerial Photos if available
--#          .price-footer
--#            %a.btn.btn-lg.btn-dark-border{:href => "#"} Schedule Today!
--#          %span.best-label Best Value
--#        / price box
--#      / price col
--#      .col-md-4.d-flex.align-middle.margin-b-30
--#        .price-box.scrollReveal.sr-scaleDown.sr-ease-in-out-back.sr-delay-2
--#          %h3 Platinum
--#          %h1
--#            -#%sup $
--#            24 Photos
--#          %ul.list-unstyled
--#            %li All Views HD Magazine Quality
--#            %li Amenity shots if available
--#            %li 2-4 Aerial Photos if available
--#          .price-footer
--#            %a.btn.btn-lg.btn-dark-border{:href => "#"} Schedule Today!
--#        / price box
--#      / price col
--#
--#    .row.flex-box
--#      .col-md-4.d-flex.align-middle.margin-b-30
--#        .price-box.scrollReveal.sr-scaleDown.sr-ease-in-out-back
--#          %h3 Small Condo
--#          %h1
--#            -#%sup
--#            10 Photos
--#          %ul.list-unstyled
--#            %li All Images Enhanced to HD Quality
--#            %li Amenity shots if available
--#          .price-footer
--#            %a.btn.btn-lg.btn-dark-border{:href => "#"} Schedule Today!
--#        / price box
--#      / price col
--#      .col-md-4.d-flex.align-middle.margin-b-30
--#        .price-box.scrollReveal.sr-scaleDown.sr-ease-in-out-back.sr-delay-1
--#          %h3 Lot
--#          %h1
--#            -#%sup $
--#            10 Photos
--#          %ul.list-unstyled
--#            %li 6 Aerial Photos and 4 HD Photos
--#            %li All Views HD Magazine Quality
--#            %li Amenity shots if available
--#          .price-footer
--#            %a.btn.btn-lg.btn-dark-border{:href => "#"} Schedule Today!
--#        / price box
--#      / price col
--#      .col-md-4.d-flex.align-middle.margin-b-30
--#        .price-box.scrollReveal.sr-scaleDown.sr-ease-in-out-back.sr-delay-2
--#          %h3 Aerial Photos
--#          %h1
--#            -#%sup $
--#            6 Photos
--#          %ul.list-unstyled
--#            %li All Views HD Magazine Quality
--#            %li Amenity shots if available
--#            %li Sunset Aerial Views available for additional charge
--#          .price-footer
--#            %a.btn.btn-lg.btn-dark-border{:href => "#"} Schedule Today!
--#        / price box
--#      / price col
--#
--#    .row.scrollReveal.sr-bottom.sr-delay-2
--#      .col-md-8.offset-md-2.text-center
--#        %p.margin-b-30
--#
--#          %a{"data-scroll" => "data-scroll", :href => "#contact"} Contact Us
--#          Today for an immediate pricing quote or to schedule your shoot today!
--#        #newsletter.collapse
--#          .newsletter-form
--#            %form.subscribe-form.xone-newsletter{:action => "#", :method => "post", :role => "form"}
--#              .form-group
--#                %input.form-control{:name => "email", :placeholder => "Enter email for quick reply", :type => "text"}/
--#              %div
--#                %button.btn.btn-skin-border.btn-lg{:name => "submit", :type => "submit"} Contact Me
--#    / row
--#  / container
--#/ pricing end
-
-
 .space-50
 
 / start services
@@ -476,7 +156,7 @@
                 Massa Designs combines professional digital photography with high quality editing to capture the best of each dynamic scene.
           / service col end with li
           %li.col-md-6.clearfix
-            %img{:src => 'images\drone-icon-shape-vector-isolated-white-background-black-copter-silhouette-monochrome-flat-pictogram.png', :style => 'float: left;margin-right: 20px;width: 60px;height: 60px;text-align: center;line-height: 60px;font-size: 35px;'}
+            %img{:src => '/assets/drone-icon-shape-vector-isolated-white-background-black-copter-silhouette-monochrome-flat-pictogram.png', :style => 'float: left;margin-right: 20px;width: 60px;height: 60px;text-align: center;line-height: 60px;font-size: 35px;'}
             .content
               %h4 Aerial Photographs
               %small.text-color FAA Certified
@@ -510,20 +190,6 @@
               %h4 Listing Portfolio
               %p
                 Working with multiple clients? Gather all of your properties and details in one place to assist your potential clients to find their perfect new home.
-          / service col end with li
-        / service list end
-    / row end
-    -#%hr/
-    -#.space-60
-    -#.text-center.scrollReveal.sr-bottom
-    -#  %h1.margin-b-20 Want to work with us
-    -#  %a.btn.btn-dark-border.btn-lg{:href => "#"} Our Portfolio
-/ end services
-
-
-
-
-
 
 .space-50
 
@@ -538,48 +204,19 @@
         %p Allow our team of expert designers to customize an aesthetically pleasing digital decor and furniture design using the latest in 3D Virtual Reality Staging which will completely enhance the look and feel of any interior space.
       .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
         #virtualstaging1{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-1-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-1-after.jpg'}
+          %img{:src => '/assets/portfolio/small/virtual-staging-1-before.jpg'}
+          %img{:src => '/assets/portfolio/small/virtual-staging-1-after.jpg'}
       .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
         #virtualstaging2{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-2-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-2-after.jpg'}
-    .row
-      .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
-        #virtualstaging5{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-5-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-5-after.jpg'}
-      .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
-        #virtualstaging6{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-6-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-6-after.jpg'}
-    .row
-      .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
-        #virtualstaging3{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-3-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-3-after.jpg'}
-      .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
-        #virtualstaging4{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-4-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-4-after.jpg'}
-    .row
-      .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
-        #virtualstaging7{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-7-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-7-after.jpg'}
-      .col-6.col-md-12.col-sm-12.col-lg-6{:style => 'padding: 0;'}
-        #virtualstaging8{:style => 'text-align:center;margin: auto; max-width: 1024px;'}
-          %img{:src => '/images/portfolio/small/virtual-staging-8-before.jpg'}
-          %img{:src => '/images/portfolio/small/virtual-staging-8-after.jpg'}
-
-
-
-
-
+          %img{:src => '/assets/portfolio/small/virtual-staging-2-before.jpg'}
+          %img{:src => '/assets/portfolio/small/virtual-staging-2-after.jpg'}
+    #loading-comparision Still Loading
+  #more-data-comparision
+    
 .space-50
 
 / contact start
-%section#contact.contact-section{:style => 'background-image: url("images/1575628.jpg");'}
+%section#contact.contact-section{:style => 'background-image: url("/assets/1575628.jpg");'}
   .space-100
   .container
     .row.margin-b-50
@@ -623,7 +260,7 @@
             .center-border
           %p.lead.white-text{:style => 'text-align:center;'}
             -#%h4.white-text Massa Designs
-            %img{:alt => 'Massa Designs logo', :src => '/images/massa_designs_logo.png', :style => 'width:200px;'}
+            %img{:alt => 'Massa Designs logo', :src => '/assets/massa_designs_logo.png', :style => 'width:200px;'}
             .white-text We create professional high definition digital imagery utilizing state of the art technology, contact us for more info!
             %br
             .white-text Licensed and insured - Serving all of South West Florida
@@ -634,36 +271,16 @@
           %p.lead
             %i.ion-email.white-text
             %a{:href => 'mailto:Support@MassaDesigns.com', :style => 'font-size: 16px;'} &nbsp;Support@MassaDesigns.com
-          -#%ul.list-inline
-          -#  %li.list-inline-item
-          -#    %a{:href => "#"}
-          -#      %i.ion-social-facebook-outline
-          -#  %li.list-inline-item
-          -#    %a{:href => "#"}
-          -#      %i.ion-social-twitter-outline
-          -#  %li.list-inline-item
-          -#    %a{:href => "#"}
-          -#      %i.ion-social-googleplus-outline
-          -#  %li.list-inline-item
-          -#    %a{:href => "#"}
-          -#      %i.ion-social-instagram-outline
-          -#  %li.list-inline-item
-          -#    %a{:href => "#"}
-          -#      %i.ion-social-linkedin-outline
-        / contact detail
-      / contact detail col end
+
   .space-40
   / Google Map
   %section#map
     / Google Map ID
     #google-map{:style => 'width: 100%; height: 400px;text-align:center;'}
       %a{:href => 'https://goo.gl/maps/iGrng2PVECJ2'}
-        %img{:src => 'http://files.massadesigns.com/images/visitors/website/googlemapofnaples-min.png', :style => 'width:100%;text-align:center;'}
+        %img{:src => '/assets/googlemapofnaples-min.png', :style => 'width:100%;text-align:center;'}
   / End Google Map
 / contact end
-
-
-
 / footer start
 %footer.footer
   .container
@@ -702,15 +319,15 @@
           %span.ion-close{"aria-hidden" => "true"}
       .modal-body
         .embed-responsive.embed-responsive-16by9
-          %iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "630", :src => "https://www.youtube.com/embed/cGPtnumayUk", :width => "1120"}
+          %iframe{:allow => "encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "630", :src => "https://www.youtube.com/embed/cGPtnumayUk", :width => "1120"}
 
 %a.scrollToTop{:href => "#"}
   %i.ion-android-arrow-dropup-circle
 
 
 = render :partial => 'shared/visitors_footer'
-
 %script{:src => 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'}
+%script{:src => '/assets/visitor_index.js'}
 :javascript
   $("#virtualstaging1").imagesLoaded( function() { $('#virtualstaging1').twentytwenty(); });
   $("#virtualstaging2").imagesLoaded( function() { $('#virtualstaging2').twentytwenty(); });
