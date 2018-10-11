@@ -1,14 +1,13 @@
 $(document).ready(function() {
 
-    $(function(){
-        $("#virtualstaging1").twentytwenty();
-        $("#virtualstaging2").twentytwenty();
-        $("#virtualstaging3").twentytwenty();
-        $("#virtualstaging4").twentytwenty();
-        $("#virtualstaging5").twentytwenty();
-        $("#virtualstaging6").twentytwenty();
-
-    });
+    // $(function(){
+    //     $("#virtualstaging1").twentytwenty();
+    //     $("#virtualstaging2").twentytwenty();
+    //     $("#virtualstaging3").twentytwenty();
+    //     $("#virtualstaging4").twentytwenty();
+    //     $("#virtualstaging5").twentytwenty();
+    //     $("#virtualstaging6").twentytwenty();
+    // });
 
     $(document).on("contextmenu",function(e){
       if(e.target.nodeName != "INPUT" && e.target.nodeName != "TEXTAREA")

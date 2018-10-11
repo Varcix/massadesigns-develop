@@ -94,12 +94,12 @@ $(function () {
 });
 
 
-$(document).ready(function () {
-    $('.main-slider').flexslider({
-        controlNav: false,
-        directionNav: true,
-        slideshowSpeed: 4000,
-        prevText: "<i class='ion-chevron-left'></i>",
-        nextText: "<i class='ion-chevron-right'></i>"
-    });
-});
+// $(document).ready(function () {
+//     $('.main-slider').flexslider({
+//         controlNav: false,
+//         directionNav: true,
+//         slideshowSpeed: 4000,
+//         prevText: "<i class='ion-chevron-left'></i>",
+//         nextText: "<i class='ion-chevron-right'></i>"
+//     });
+// });

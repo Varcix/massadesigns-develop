@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require jquery.min
-//= require jquery.lazy.min
+//= require imagesloaded.pkgd.min
 //= require visitors/jquery.animsition
 //= require visitors/jquery.sticky
 //= require visitors/jquery.flexslider-min
@@ -28,6 +28,12 @@
 //= require visitors/jquery.cubeportfolio.min
 //= require visitors/cube-awesome-work
 //= require visitors/scroll-reavel-custom
-$(function() {
-    $('img').lazy();
-});
+//= require imagesloaded.pkgd.min
+//= require visitor_index
+//= require visitors/jquery.twentytwenty
+//= require visitors/jquery.event.move
+//= require visitors/jquery.ujs
+//= require visitors/jquery.fancybox
+//= require visitors/contact
+//= require visitors/custom
+//= require_directory .

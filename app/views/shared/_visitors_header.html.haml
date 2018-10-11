@@ -36,7 +36,7 @@
     %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     %a.navbar-brand{:href => '/', :style => 'font-size: xx-large;'}
-      %img{:alt => 'Massa Designs logo', :src => '/assets/massa_designs_logo.png', :style => 'width:250px;'}
+      %img{:alt => 'Massa Designs logo', "data-src" => '/assets/massa_designs_logo.png',:src => "", :style => 'width:250px;', :class => "lazy"}
     #navbarSupportedContent.collapse.navbar-collapse
       %ul.navbar-nav.ml-auto.scroll-to
         %li.nav-item
