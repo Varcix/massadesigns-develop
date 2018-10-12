@@ -7,18 +7,15 @@
   %meta{:content => 'width=device-width, initial-scale=1', :name => 'viewport'}/
   %title Massa Designs - Naples, Marco Island, Bonita Springs Ft Myers SWFL Photography Drone Aerial Photographs Video Tours
   / plugins
-  %link{:href => '/assets/visitors/ionicons.min.css', :rel => 'stylesheet'}/
-  %link{:href => '/assets/visitors/bootstrap.min.css', :rel => 'stylesheet'}/
-  %link{:href => '/assets/visitors/flexslider.css', :rel => 'stylesheet'}/
-  %link{:href => '/assets/visitors/cubeportfolio.min.css', :rel => 'stylesheet', :type => 'text/css'}/
-  %link{:href => '/assets/visitors/dzsparallaxer.css', :rel => 'stylesheet', :type => 'text/css'}/
-  %link{:href => '/assets/visitors/jquery.fancybox.css', :rel => 'stylesheet', :type => 'text/css'}/
-  -#%link{:href => '/stylesheets/visitors/foundation.css', :rel => 'stylesheet', :type => 'text/css'}/
-  %link{:href => '/assets/visitors/twentytwenty-no-compass.css', :rel => 'stylesheet', :type => 'text/css'}/
-  %link{:href => '/assets/visitors/twentytwenty.css', :rel => 'stylesheet', :type => 'text/css'}/
-  / main css file
-  %link{:href => '/assets/visitors/style.css', :rel => 'stylesheet'}/
-
+  = stylesheet_link_tag 'visitors/ionicons.min'
+  = stylesheet_link_tag 'visitors/bootstrap.min'
+  = stylesheet_link_tag 'visitors/flexslider'
+  = stylesheet_link_tag 'visitors/cubeportfolio.min'
+  = stylesheet_link_tag 'visitors/dzsparallaxer'
+  = stylesheet_link_tag 'visitors/jquery.fancybox'
+  = stylesheet_link_tag 'visitors/twentytwenty-no-compass'
+  = stylesheet_link_tag 'visitors/style'
+  = stylesheet_link_tag 'visitors/twentytwenty'
   /[if lt IE 9]
     <script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>
     <script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'></script>
@@ -36,7 +33,7 @@
     %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     %a.navbar-brand{:href => '/', :style => 'font-size: xx-large;'}
-      %img{:alt => 'Massa Designs logo', "data-src" => '/assets/massa_designs_logo.png',:src => "", :style => 'width:250px;', :class => "lazy"}
+      %img{:alt => 'Massa Designs logo', "data-src" => "#{asset_path 'massa_designs_logo.png'}",:src => "", :style => 'width:250px;', :class => "lazy"}
     #navbarSupportedContent.collapse.navbar-collapse
       %ul.navbar-nav.ml-auto.scroll-to
         %li.nav-item

@@ -31,7 +31,7 @@ module MongoDBExampleApp
     # config.active_record.raise_in_transactional_callbacks = true
 
     config.assets.enabled = true
-    Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf|woff2)$/
+    Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf|woff2|js|jpg|png|gif|jpeg)$/
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     config.action_dispatch.default_headers = {
         'X-Frame-Options' => 'ALLOWALL'
